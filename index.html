@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pixlog - ابزار و کد آماده وبلاگ</title>
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;700;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+<header class="header">
+  <div class="header-logo">
+    <div class="header-logo-icon">
+      <svg class="px px-24" viewBox="0 0 16 16"><g fill="#fbbf24"><rect x="3" y="3" width="2" height="2"/><rect x="11" y="3" width="2" height="2"/><rect x="5" y="5" width="6" height="2"/><rect x="3" y="7" width="10" height="2"/><rect x="5" y="9" width="6" height="2"/><rect x="3" y="11" width="2" height="2"/><rect x="11" y="11" width="2" height="2"/><rect x="6" y="11" width="4" height="2"/></g></svg>
+    </div>
+    <span class="header-logo-text">PIXLOG</span>
+  </div>
+  <div class="header-actions">
+    <button class="icon-btn" id="themeToggle" title="تغییر تم" aria-label="تغییر تم">
+      <svg class="px px-24" id="themeIcon" viewBox="0 0 16 16"></svg>
+    </button>
+  </div>
+</header>
+
+<!-- ========== صفحه خانه ========== -->
+<div class="page active" id="page-home">
+  <main class="main-content">
+    <div class="hero-gif">
+      <img src="https://cdn.imgurl.ir/uploads/w829413_e2553fc42e8d4a2e82cd90f6e7f7f0a5.gif" alt="Hero">
+    </div>
+
+    <div class="filter-tabs" role="tablist">
+      <button class="tab active" data-filter="articles" role="tab">مقالات</button>
+      <button class="tab" data-filter="templates" role="tab">قالب‌ها</button>
+      <button class="tab" data-filter="snippets" role="tab">قطعه کد</button>
+      <button class="tab" data-filter="tools" role="tab">ابزارها</button>
+      <button class="tab" data-filter="shop" role="tab">فروشگاه</button>
+    </div>
+
+    <section class="section" id="sec-articles">
+      <div class="section-header">
+        <div class="section-title">
+          <svg class="px px-24" viewBox="0 0 16 16"><g fill="#C4B5FD"><rect x="4" y="1" width="8" height="1"/><rect x="3" y="2" width="1" height="1"/><rect x="12" y="2" width="1" height="1"/><rect x="4" y="2" width="8" height="1"/><rect x="2" y="3" width="1" height="10"/><rect x="13" y="3" width="1" height="10"/><rect x="3" y="3" width="10" height="1"/><rect x="3" y="13" width="10" height="1"/><rect x="4" y="14" width="8" height="1"/></g><g fill="#A78BFA"><rect x="3" y="4" width="10" height="1"/><rect x="3" y="6" width="10" height="1"/><rect x="3" y="8" width="10" height="1"/><rect x="3" y="10" width="10" height="1"/><rect x="3" y="12" width="10" height="1"/></g><g fill="#F5F3FF"><rect x="4" y="5" width="8" height="1"/><rect x="4" y="7" width="8" height="1"/><rect x="4" y="9" width="8" height="1"/><rect x="4" y="11" width="8" height="1"/></g><g fill="#7C3AED"><rect x="6" y="1" width="4" height="1"/><rect x="7" y="0" width="2" height="1"/></g></svg>
+          مقالات
+        </div>
+        <a href="/articles" class="view-all">
+          مشاهده همه
+          <svg class="px px-16" viewBox="0 0 16 16"><g fill="currentColor"><rect x="3" y="7" width="8" height="2"/><rect x="9" y="5" width="2" height="2"/><rect x="9" y="9" width="2" height="2"/><rect x="11" y="6" width="2" height="4"/></g></svg>        </a>
+      </div>
+      <div class="cards-grid" id="articlesList"></div>
+    </section>
+
+    <section class="section hidden" id="sec-templates">
+      <div class="section-header">
+        <div class="section-title">
+          <svg class="px px-24" viewBox="0 0 16 16"><g fill="#93C5FD"><rect x="1" y="1" width="14" height="1"/><rect x="1" y="2" width="1" height="12"/><rect x="14" y="2" width="1" height="12"/><rect x="2" y="2" width="12" height="1"/><rect x="2" y="13" width="12" height="1"/><rect x="1" y="14" width="14" height="1"/></g><g fill="#60A5FA"><rect x="2" y="3" width="4" height="4"/><rect x="8" y="3" width="6" height="4"/><rect x="2" y="9" width="12" height="1"/><rect x="2" y="10" width="12" height="3"/></g><g fill="#DBEAFE"><rect x="3" y="4" width="2" height="1"/><rect x="3" y="6" width="2" height="1"/><rect x="9" y="4" width="4" height="1"/><rect x="9" y="6" width="4" height="1"/><rect x="3" y="11" width="10" height="1"/></g><g fill="#2563EB"><rect x="2" y="3" width="12" height="1"/><rect x="2" y="7" width="12" height="1"/><rect x="2" y="10" width="12" height="1"/></g></svg>
+          قالب‌ها
+        </div>
+        <a href="/templates" class="view-all">
+          مشاهده همه
+          <svg class="px px-16" viewBox="0 0 16 16"><g fill="currentColor"><rect x="3" y="7" width="8" height="2"/><rect x="9" y="5" width="2" height="2"/><rect x="9" y="9" width="2" height="2"/><rect x="11" y="6" width="2" height="4"/></g></svg>
+        </a>
+      </div>
+      <div class="cards-grid" id="templatesList"></div>
+    </section>
+
+    <section class="section hidden" id="sec-snippets">
+      <div class="section-header">
+        <div class="section-title">
+          <svg class="px px-24" viewBox="0 0 16 16"><g fill="#FDE68A"><rect x="4" y="2" width="1" height="1"/><rect x="3" y="3" width="1" height="1"/><rect x="2" y="4" width="1" height="1"/><rect x="3" y="5" width="1" height="1"/><rect x="4" y="6" width="1" height="1"/><rect x="5" y="7" width="1" height="2"/><rect x="4" y="9" width="1" height="1"/><rect x="3" y="10" width="1" height="1"/><rect x="2" y="11" width="1" height="1"/><rect x="3" y="12" width="1" height="1"/><rect x="4" y="13" width="1" height="1"/><rect x="11" y="2" width="1" height="1"/><rect x="12" y="3" width="1" height="1"/><rect x="13" y="4" width="1" height="1"/><rect x="12" y="5" width="1" height="1"/><rect x="11" y="6" width="1" height="1"/><rect x="10" y="7" width="1" height="2"/><rect x="11" y="9" width="1" height="1"/><rect x="12" y="10" width="1" height="1"/><rect x="13" y="11" width="1" height="1"/><rect x="12" y="12" width="1" height="1"/><rect x="11" y="13" width="1" height="1"/></g><g fill="#FBBF24"><rect x="5" y="3" width="1" height="1"/><rect x="4" y="4" width="1" height="1"/><rect x="5" y="5" width="1" height="1"/><rect x="6" y="6" width="1" height="1"/><rect x="7" y="7" width="1" height="2"/><rect x="6" y="9" width="1" height="1"/><rect x="5" y="10" width="1" height="1"/><rect x="4" y="11" width="1" height="1"/><rect x="5" y="12" width="1" height="1"/><rect x="10" y="3" width="1" height="1"/><rect x="11" y="4" width="1" height="1"/><rect x="10" y="5" width="1" height="1"/><rect x="9" y="6" width="1" height="1"/><rect x="8" y="7" width="1" height="2"/><rect x="9" y="9" width="1" height="1"/><rect x="10" y="10" width="1" height="1"/><rect x="11" y="11" width="1" height="1"/><rect x="10" y="12" width="1" height="1"/></g></svg>
+          قطعه کد
+        </div>
+        <a href="/snippets" class="view-all">
+          مشاهده همه
+          <svg class="px px-16" viewBox="0 0 16 16"><g fill="currentColor"><rect x="3" y="7" width="8" height="2"/><rect x="9" y="5" width="2" height="2"/><rect x="9" y="9" width="2" height="2"/><rect x="11" y="6" width="2" height="4"/></g></svg>
+        </a>
+      </div>
+      <div class="cards-grid" id="snippetsList"></div>
+    </section>
+
+    <section class="section hidden" id="sec-tools">
+      <div class="section-header">
+        <div class="section-title">
+          <svg class="px px-24" viewBox="0 0 16 16"><g fill="#6EE7B7"><rect x="11" y="1" width="2" height="1"/><rect x="12" y="2" width="2" height="1"/><rect x="10" y="3" width="1" height="1"/><rect x="9" y="4" width="1" height="1"/><rect x="8" y="5" width="1" height="1"/><rect x="7" y="6" width="1" height="1"/><rect x="6" y="7" width="1" height="1"/><rect x="5" y="8" width="1" height="1"/><rect x="4" y="9" width="1" height="1"/><rect x="3" y="10" width="1" height="1"/><rect x="2" y="11" width="1" height="1"/><rect x="3" y="12" width="1" height="1"/><rect x="4" y="13" width="1" height="1"/><rect x="5" y="14" width="1" height="1"/></g><g fill="#34D399"><rect x="10" y="2" width="1" height="1"/><rect x="9" y="3" width="1" height="1"/><rect x="8" y="4" width="1" height="1"/><rect x="7" y="5" width="1" height="1"/><rect x="6" y="6" width="1" height="1"/><rect x="5" y="7" width="1" height="1"/><rect x="4" y="8" width="1" height="1"/><rect x="3" y="9" width="1" height="1"/><rect x="2" y="10" width="1" height="1"/><rect x="1" y="11" width="1" height="1"/><rect x="2" y="12" width="1" height="1"/><rect x="3" y="13" width="1" height="1"/><rect x="4" y="14" width="1" height="1"/></g></svg>
+          ابزارها
+        </div>
+        <a href="/tools" class="view-all">
+          مشاهده همه
+          <svg class="px px-16" viewBox="0 0 16 16"><g fill="currentColor"><rect x="3" y="7" width="8" height="2"/><rect x="9" y="5" width="2" height="2"/><rect x="9" y="9" width="2" height="2"/><rect x="11" y="6" width="2" height="4"/></g></svg>
+        </a>
+      </div>
+      <div class="cards-grid" id="toolsList"></div>
+    </section>
+
+    <section class="section hidden" id="sec-shop">
+      <div class="section-header">
+        <div class="section-title">          <svg class="px px-24" viewBox="0 0 16 16"><g fill="#FDE68A"><rect x="5" y="1" width="6" height="1"/><rect x="4" y="2" width="1" height="1"/><rect x="11" y="2" width="1" height="1"/><rect x="3" y="3" width="10" height="1"/><rect x="2" y="4" width="12" height="1"/><rect x="2" y="5" width="1" height="8"/><rect x="13" y="5" width="1" height="8"/><rect x="3" y="13" width="10" height="1"/><rect x="4" y="14" width="8" height="1"/></g><g fill="#FBBF24"><rect x="3" y="5" width="10" height="1"/><rect x="3" y="6" width="1" height="6"/><rect x="12" y="6" width="1" height="6"/><rect x="4" y="12" width="8" height="1"/></g><g fill="#D97706"><rect x="6" y="7" width="4" height="3"/><rect x="7" y="10" width="2" height="2"/></g></svg>
+          فروشگاه قالب‌های پولی
+        </div>
+        <a href="/shop" class="view-all">
+          مشاهده همه
+          <svg class="px px-16" viewBox="0 0 16 16"><g fill="currentColor"><rect x="3" y="7" width="8" height="2"/><rect x="9" y="5" width="2" height="2"/><rect x="9" y="9" width="2" height="2"/><rect x="11" y="6" width="2" height="4"/></g></svg>
+        </a>
+      </div>
+      <div class="cards-grid" id="shopList"></div>
+    </section>
+  </main>
+</div>
+
+<!-- ========== صفحه درباره ========== -->
+<div class="page" id="page-about">
+  <div class="page-container">
+    <div class="page-header">
+      <div class="page-title">درباره پیکس‌لاگ</div>
+      <div class="page-subtitle">بازارچه ابزار و کد آماده وبلاگ‌نویسی</div>
+    </div>
+
+    <div class="about-card">
+      <h3>
+        <svg class="px px-20" viewBox="0 0 16 16"><g fill="#fbbf24"><rect x="2" y="5" width="12" height="6"/><rect x="3" y="4" width="2" height="1"/><rect x="11" y="4" width="2" height="1"/><rect x="3" y="11" width="2" height="1"/><rect x="11" y="11" width="2" height="1"/><rect x="1" y="6" width="1" height="4"/><rect x="14" y="6" width="1" height="4"/></g><g fill="#0a0e1a"><rect x="4" y="6" width="2" height="2"/><rect x="10" y="6" width="2" height="2"/><rect x="6" y="9" width="4" height="1"/></g><g fill="#fcd34d"><rect x="5" y="7" width="1" height="1"/><rect x="11" y="7" width="1" height="1"/></g></svg>
+        پیکس‌لاگ چیست؟
+      </h3>
+      <p>پیکس‌لاگ (Pixlog) یک مجموعه کامل و بازارچه برای ابزارها، کدهای آماده و قالب‌های وبلاگ‌نویسی است. ما با طراحی پیکسلی و الهام از دنیای رترو، تلاش می‌کنیم بهترین ابزارها را برای وبلاگ‌نویسان فارسی‌زبان فراهم کنیم.</p>
+    </div>
+
+    <div class="about-card">
+      <h3>
+        <svg class="px px-20" viewBox="0 0 16 16"><g fill="#fbbf24"><rect x="7" y="1" width="2" height="2"/><rect x="7" y="13" width="2" height="2"/><rect x="1" y="7" width="2" height="2"/><rect x="13" y="7" width="2" height="2"/><rect x="3" y="3" width="2" height="2"/><rect x="11" y="3" width="2" height="2"/><rect x="3" y="11" width="2" height="2"/><rect x="11" y="11" width="2" height="2"/></g><g fill="#fcd34d"><rect x="7" y="5" width="2" height="2"/><rect x="5" y="7" width="2" height="2"/><rect x="9" y="7" width="2" height="2"/><rect x="7" y="9" width="2" height="2"/></g></svg>
+        امکانات
+      </h3>
+      <ul>
+        <li>مجموعه‌ای از قالب‌های آماده و زیبا برای بلاگفا</li>
+        <li>قطعه کدهای کاربردی برای بهبود وبلاگ</li>
+        <li>ابزارهای آنلاین برای مدیریت و بهینه‌سازی وبلاگ</li>
+        <li>مقالات آموزشی در زمینه وبلاگ‌نویسی و سئو</li>
+        <li>فروشگاه قالب‌های حرفه‌ای و پولی</li>
+      </ul>
+    </div>
+
+    <div class="about-card">
+      <h3>
+        <svg class="px px-20" viewBox="0 0 16 16"><g fill="#fbbf24"><rect x="2" y="2" width="12" height="12"/><rect x="1" y="3" width="1" height="10"/><rect x="14" y="3" width="1" height="10"/><rect x="3" y="1" width="10" height="1"/></g><g fill="#fcd34d"><rect x="4" y="4" width="3" height="3"/><rect x="9" y="4" width="3" height="3"/><rect x="4" y="9" width="3" height="3"/><rect x="9" y="9" width="3" height="3"/></g><g fill="#d97706"><rect x="5" y="5" width="1" height="1"/><rect x="10" y="5" width="1" height="1"/><rect x="5" y="10" width="1" height="1"/><rect x="10" y="10" width="1" height="1"/></g></svg>
+        چرا پیکسلی؟
+      </h3>
+      <p>طراحی پیکسلی (Pixel Art) یادآور دوران طلایی بازی‌های ویدیویی است. ما با ترکیب این نوستالژی با فناوری‌های مدرن، تجربه‌ای منحصر به فرد برای وبلاگ‌نویسان ایجاد کرده‌ایم. هر آیکون، هر دکمه و هر المان بصری با دقت و به صورت پیکسلی طراحی شده است.</p>
+    </div>  </div>
+</div>
+
+<!-- ========== صفحه کوته نوشت ========== -->
+<div class="page" id="page-posts">
+  <div class="page-container">
+    <div class="page-header">
+      <div class="page-title">کوته نوشت</div>
+      <div class="page-subtitle">آخرین نوشته‌های وبلاگ</div>
+    </div>
+    <div class="blog-posts">
+      <BLOGFA>
+      <article class="blog-post">
+        <h2 class="post-title"><-PostTitle-></h2>
+        <div class="post-meta">
+          <span><-PostDate-></span>
+          <span class="sep">•</span>
+          <span><-PostTime-></span>
+          <span class="sep">•</span>
+          <span><-PostAuthor-></span>
+        </div>
+        <div class="post-content"><-PostContent-><BlogPostTagsBlock><br>برچسب‌ها: <BlogPostTags separator=", "><a href="<-TagLink->"><-TagName-></a></BlogPostTags></BlogPostTagsBlock></div>
+      </article>
+      </BLOGFA>
+    </div>
+  </div>
+</div>
+
+<!-- ========== فوتر ========== -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-quick">
+      <div class="footer-col">
+        <h4>
+          <svg class="px px-16" viewBox="0 0 16 16"><g fill="#fbbf24"><rect x="2" y="2" width="12" height="1"/><rect x="2" y="3" width="1" height="10"/><rect x="13" y="3" width="1" height="10"/><rect x="2" y="13" width="12" height="1"/><rect x="4" y="5" width="8" height="1"/><rect x="4" y="7" width="8" height="1"/><rect x="4" y="9" width="6" height="1"/></g></svg>
+          دسترسی سریع
+        </h4>
+        <ul class="footer-links">
+          <li><a href="#" onclick="switchPage('home');return false;">خانه</a></li>
+          <li><a href="#" onclick="switchPage('about');return false;">درباره</a></li>
+          <li><a href="#" onclick="switchPage('posts');return false;">کوته نوشت</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="footer-copyright">
+        <svg class="px px-16" viewBox="0 0 16 16"><g fill="#fbbf24"><rect x="3" y="3" width="2" height="2"/><rect x="11" y="3" width="2" height="2"/><rect x="5" y="5" width="6" height="2"/><rect x="3" y="7" width="10" height="2"/><rect x="5" y="9" width="6" height="2"/><rect x="3" y="11" width="2" height="2"/><rect x="11" y="11" width="2" height="2"/></g></svg>
+        تمامی حقوق برای پیکس‌لاگ محفوظ است © 2026
+      </div>      <div class="footer-made">
+        MADE WITH
+        <span class="pixel-heart">
+          <svg class="px px-16" viewBox="0 0 16 16"><g fill="#ef4444"><rect x="5" y="3" width="2" height="1"/><rect x="9" y="3" width="2" height="1"/><rect x="3" y="4" width="2" height="1"/><rect x="5" y="4" width="2" height="1"/><rect x="7" y="4" width="2" height="1"/><rect x="9" y="4" width="2" height="1"/><rect x="11" y="4" width="2" height="1"/><rect x="2" y="5" width="1" height="2"/><rect x="13" y="5" width="1" height="2"/><rect x="2" y="7" width="1" height="2"/><rect x="13" y="7" width="1" height="2"/><rect x="3" y="9" width="2" height="1"/><rect x="11" y="9" width="2" height="1"/><rect x="5" y="10" width="2" height="1"/><rect x="9" y="10" width="2" height="1"/><rect x="7" y="11" width="2" height="1"/></g></svg>
+        </span>
+        IN PIXLOG
+      </div>
+    </div>
+  </div>
+</footer>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="index.js"></script>
+</body>
+</html>
