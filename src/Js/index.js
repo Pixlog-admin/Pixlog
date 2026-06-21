@@ -1,4 +1,3 @@
-// ========== داده‌ها - هر کارت با عکس کاملاً متفاوت ==========
 const itemsData = {
   article1: { 
     title: 'راهنمای کامل سئو برای وبلاگ', 
@@ -47,8 +46,8 @@ const itemsData = {
     category: 'tools', 
     image: 'https://placehold.co/400x200/ef4444/ffffff?text=Contact+Form&font=roboto', 
     link: '/tool/contact' 
-  },  dark: { 
-    title: 'حالت تاریک هوشمند', 
+  },
+  dark: {     title: 'حالت تاریک هوشمند', 
     tag: 'ابزار', 
     excerpt: 'تغییر تم سایت با تشخیص خودکار تنظیمات سیستم', 
     category: 'tools', 
@@ -84,7 +83,6 @@ const itemsData = {
   }
 };
 
-// ========== آیکون‌ها ==========
 const moonIcon = `<svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" shape-rendering="crispEdges"><g fill="#FFF3A2"><rect x="10" y="3" width="1" height="1"/><rect x="11" y="4" width="1" height="1"/><rect x="11" y="5" width="1" height="1"/><rect x="10" y="6" width="1" height="1"/></g><g fill="#F6EE90"><rect x="7" y="2" width="1" height="1"/><rect x="6" y="3" width="2" height="1"/><rect x="5" y="4" width="2" height="1"/><rect x="4" y="5" width="3" height="1"/><rect x="4" y="6" width="2" height="1"/><rect x="4" y="7" width="2" height="1"/><rect x="4" y="8" width="3" height="1"/><rect x="5" y="9" width="2" height="1"/><rect x="6" y="10" width="2" height="1"/><rect x="7" y="11" width="1" height="1"/></g><g fill="#FFFCDD"><rect x="5" y="5" width="1" height="1"/><rect x="4" y="6" width="1" height="2"/></g><g fill="#D3CA66"><rect x="7" y="4" width="1" height="1"/><rect x="6" y="6" width="1" height="2"/><rect x="7" y="9" width="1" height="1"/></g></svg>`;
 
 const sunIcon = `<svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" shape-rendering="crispEdges"><g fill="#F0E68C"><rect x="7" y="1" width="1" height="1"/><rect x="2" y="7" width="1" height="1"/><rect x="12" y="7" width="1" height="1"/><rect x="4" y="3" width="1" height="1"/><rect x="10" y="3" width="1" height="1"/><rect x="4" y="11" width="1" height="1"/><rect x="10" y="11" width="1" height="1"/><rect x="7" y="13" width="1" height="1"/></g><g fill="#E8D96A"><rect x="7" y="2" width="1" height="2"/><rect x="3" y="7" width="2" height="1"/><rect x="10" y="7" width="2" height="1"/><rect x="5" y="4" width="1" height="1"/><rect x="9" y="4" width="1" height="1"/><rect x="5" y="10" width="1" height="1"/><rect x="9" y="10" width="1" height="1"/><rect x="7" y="10" width="1" height="2"/></g><g fill="#C9B84A"><rect x="6" y="5" width="4" height="1"/><rect x="5" y="6" width="6" height="1"/><rect x="5" y="7" width="6" height="2"/><rect x="6" y="9" width="4" height="1"/></g></svg>`;
@@ -96,10 +94,9 @@ const toastIcons = {
   moon: `<svg class="px px-16" viewBox="0 0 16 16"><g fill="#a78bfa"><rect x="9" y="2" width="2" height="1"/><rect x="10" y="3" width="2" height="1"/><rect x="11" y="4" width="1" height="1"/><rect x="7" y="3" width="2" height="1"/><rect x="6" y="4" width="2" height="1"/><rect x="5" y="5" width="2" height="1"/><rect x="4" y="6" width="2" height="2"/><rect x="5" y="8" width="2" height="1"/><rect x="6" y="9" width="2" height="1"/><rect x="7" y="10" width="2" height="1"/><rect x="8" y="11" width="2" height="1"/><rect x="9" y="12" width="1" height="1"/></g></svg>`
 };
 
-// ========== کارت‌ها ==========function createCard(id, data) {
+function createCard(id, data) {
   const card = document.createElement('div');
-  card.className = 'card';
-  card.dataset.id = id;
+  card.className = 'card';  card.dataset.id = id;
   
   const link = document.createElement('a');
   link.className = 'card-link';
@@ -121,9 +118,7 @@ const toastIcons = {
       <span class="card-price">${moneyIcon} ${data.price} تومان</span>
     `;
   } else {
-    footer.innerHTML = `
-      <span class="card-tag">${data.tag}</span>
-    `;
+    footer.innerHTML = `<span class="card-tag">${data.tag}</span>`;
   }
   
   card.appendChild(link);
@@ -145,12 +140,11 @@ function renderCategoryItems() {
     container.innerHTML = '';
     Object.keys(itemsData).forEach(id => {
       if (itemsData[id].category === category) {
-        container.appendChild(createCard(id, itemsData[id]));      }
+        container.appendChild(createCard(id, itemsData[id]));
+      }
     });
   });
 }
-
-// ========== تم ==========
 const themeToggle = document.getElementById('themeToggle');
 const themeIcon = document.getElementById('themeIcon');
 
@@ -171,7 +165,6 @@ themeToggle.addEventListener('click', () => {
   showToast((next === 'light' ? toastIcons.sun : toastIcons.moon) + (next === 'light' ? ' حالت روشن' : ' حالت تاریک'));
 });
 
-// ========== Toast ==========
 const toast = document.getElementById('toast');
 let toastTimeout;
 function showToast(message) {
@@ -181,7 +174,6 @@ function showToast(message) {
   toastTimeout = setTimeout(() => toast.classList.remove('show'), 2200);
 }
 
-// ========== تب‌های صفحه اصلی ==========
 document.querySelectorAll('.tab[data-filter]').forEach(tab => {
   tab.addEventListener('click', () => {
     document.querySelectorAll('.tab[data-filter]').forEach(t => t.classList.remove('active'));
@@ -193,8 +185,8 @@ document.querySelectorAll('.tab[data-filter]').forEach(tab => {
   });
 });
 
-// ========== ناوبری صفحات ==========
 const pages = document.querySelectorAll('.page');
+
 function switchPage(pageId) {
   pages.forEach(p => p.classList.remove('active'));
   const target = document.getElementById(`page-${pageId}`);
@@ -202,5 +194,4 @@ function switchPage(pageId) {
   window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
-// ========== راه‌اندازی ==========
 renderCategoryItems();
