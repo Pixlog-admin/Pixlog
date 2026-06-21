@@ -1,11 +1,11 @@
-// ========== داده‌ها - هر کارت با عکس جداگانه ==========
+// ========== داده‌ها - هر کارت با عکس کاملاً متفاوت ==========
 const itemsData = {
   article1: { 
     title: 'راهنمای کامل سئو برای وبلاگ', 
     tag: 'مقاله', 
     excerpt: 'آموزش کامل بهینه‌سازی وبلاگ برای موتورهای جستجو', 
     category: 'articles', 
-    image: 'https://picsum.photos/seed/pixlog-seo-1/400/200', 
+    image: 'https://picsum.photos/400/200?random=1', 
     link: '/article/1' 
   },
   article2: { 
@@ -13,7 +13,7 @@ const itemsData = {
     tag: 'مقاله', 
     excerpt: 'اصول طراحی UI مدرن با تمرکز بر تجربه کاربری', 
     category: 'articles', 
-    image: 'https://picsum.photos/seed/pixlog-ui-2/400/200', 
+    image: 'https://picsum.photos/400/200?random=2', 
     link: '/article/2' 
   },
   slider: { 
@@ -21,7 +21,7 @@ const itemsData = {
     tag: 'قطعه کد', 
     excerpt: 'اسلایدر زیبا و واکنش‌گرا با پشتیبانی از لمس', 
     category: 'snippets', 
-    image: 'https://picsum.photos/seed/pixlog-slider-3/400/200', 
+    image: 'https://picsum.photos/400/200?random=3', 
     link: '/snippet/slider' 
   },
   toc: { 
@@ -29,7 +29,7 @@ const itemsData = {
     tag: 'قطعه کد', 
     excerpt: 'ساخت خودکار جدول محتوا از تیترهای پست', 
     category: 'snippets', 
-    image: 'https://picsum.photos/seed/pixlog-toc-4/400/200', 
+    image: 'https://picsum.photos/400/200?random=4', 
     link: '/snippet/toc' 
   },
   theme: { 
@@ -37,7 +37,7 @@ const itemsData = {
     tag: 'قالب', 
     excerpt: 'قالب واکنش‌گرا و بهینه‌شده برای SEO', 
     category: 'templates', 
-    image: 'https://picsum.photos/seed/pixlog-theme-5/400/200', 
+    image: 'https://picsum.photos/400/200?random=5', 
     link: '/template/modern' 
   },
   contact: { 
@@ -45,14 +45,14 @@ const itemsData = {
     tag: 'ابزار', 
     excerpt: 'فرم تماس با اعتبارسنجی لحظه‌ای و ضد اسپم', 
     category: 'tools', 
-    image: 'https://picsum.photos/seed/pixlog-contact-6/400/200', 
+    image: 'https://picsum.photos/400/200?random=6', 
     link: '/tool/contact' 
   },  dark: { 
     title: 'حالت تاریک هوشمند', 
     tag: 'ابزار', 
     excerpt: 'تغییر تم سایت با تشخیص خودکار تنظیمات سیستم', 
     category: 'tools', 
-    image: 'https://picsum.photos/seed/pixlog-dark-7/400/200', 
+    image: 'https://picsum.photos/400/200?random=7', 
     link: '/tool/dark' 
   },
   shop1: { 
@@ -60,7 +60,7 @@ const itemsData = {
     tag: 'قالب پولی', 
     excerpt: 'قالب کاملاً واکنش‌گرا با طراحی مدرن و امکانات پیشرفته', 
     category: 'shop', 
-    image: 'https://picsum.photos/seed/pixlog-vip-8/400/200', 
+    image: 'https://picsum.photos/400/200?random=8', 
     link: '/shop/template-vip', 
     price: '۴۹,۰۰۰' 
   },
@@ -69,7 +69,7 @@ const itemsData = {
     tag: 'قالب پولی', 
     excerpt: 'مناسب برای فروشگاه‌های آنلاین با سیستم سبد خرید', 
     category: 'shop', 
-    image: 'https://picsum.photos/seed/pixlog-shop-9/400/200', 
+    image: 'https://picsum.photos/400/200?random=9', 
     link: '/shop/template-store', 
     price: '۷۹,۰۰۰' 
   },
@@ -78,7 +78,7 @@ const itemsData = {
     tag: 'قالب پولی', 
     excerpt: 'طراحی شده برای سایت‌های خبری با دسته‌بندی‌های متعدد', 
     category: 'shop', 
-    image: 'https://picsum.photos/seed/pixlog-news-10/400/200', 
+    image: 'https://picsum.photos/400/200?random=10', 
     link: '/shop/template-news', 
     price: '۵۹,۰۰۰' 
   }
