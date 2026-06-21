@@ -1,17 +1,87 @@
 // ========== داده‌ها ==========
-const SAMPLE_IMAGE = 'https://cdn.imgurl.ir/uploads/q23667_file_000000000e7c720aa20c673bffdb9891.png';
-
 const itemsData = {
-  article1: { title: 'راهنمای کامل سئو برای وبلاگ', tag: 'مقاله', excerpt: 'آموزش کامل بهینه‌سازی وبلاگ برای موتورهای جستجو', category: 'articles', image: SAMPLE_IMAGE, link: '/article/1' },
-  article2: { title: 'بهترین روش‌های طراحی رابط کاربری', tag: 'مقاله', excerpt: 'اصول طراحی UI مدرن با تمرکز بر تجربه کاربری', category: 'articles', image: SAMPLE_IMAGE, link: '/article/2' },
-  slider: { title: 'اسلایدر پست‌های وبلاگ', tag: 'قطعه کد', excerpt: 'اسلایدر زیبا و واکنش‌گرا با پشتیبانی از لمس', category: 'snippets', image: SAMPLE_IMAGE, link: '/snippet/slider' },
-  toc: { title: 'جدول محتوا خودکار', tag: 'قطعه کد', excerpt: 'ساخت خودکار جدول محتوا از تیترهای پست', category: 'snippets', image: SAMPLE_IMAGE, link: '/snippet/toc' },
-  theme: { title: 'قالب مدرن وبلاگ', tag: 'قالب', excerpt: 'قالب واکنش‌گرا و بهینه‌شده برای SEO', category: 'templates', image: SAMPLE_IMAGE, link: '/template/modern' },
-  contact: { title: 'فرم تماس پیشرفته', tag: 'ابزار', excerpt: 'فرم تماس با اعتبارسنجی لحظه‌ای و ضد اسپم', category: 'tools', image: SAMPLE_IMAGE, link: '/tool/contact' },
-  dark: { title: 'حالت تاریک هوشمند', tag: 'ابزار', excerpt: 'تغییر تم سایت با تشخیص خودکار تنظیمات سیستم', category: 'tools', image: SAMPLE_IMAGE, link: '/tool/dark' },
-  shop1: { title: 'قالب حرفه‌ای بلاگفا - نسخه VIP', tag: 'قالب پولی', excerpt: 'قالب کاملاً واکنش‌گرا با طراحی مدرن و امکانات پیشرفته', category: 'shop', image: SAMPLE_IMAGE, link: '/shop/template-vip', price: '۴۹,۰۰۰' },
-  shop2: { title: 'قالب فروشگاهی بلاگفا', tag: 'قالب پولی', excerpt: 'مناسب برای فروشگاه‌های آنلاین با سیستم سبد خرید', category: 'shop', image: SAMPLE_IMAGE, link: '/shop/template-store', price: '۷۹,۰۰۰' },
-  shop3: { title: 'قالب خبری پیشرفته', tag: 'قالب پولی', excerpt: 'طراحی شده برای سایت‌های خبری با دسته‌بندی‌های متعدد', category: 'shop', image: SAMPLE_IMAGE, link: '/shop/template-news', price: '۵۹,۰۰۰' }
+  article1: { 
+    title: 'راهنمای کامل سئو برای وبلاگ', 
+    tag: 'مقاله', 
+    excerpt: 'آموزش کامل بهینه‌سازی وبلاگ برای موتورهای جستجو', 
+    category: 'articles', 
+    image: 'https://picsum.photos/seed/seo-guide/400/200', 
+    link: '/article/1' 
+  },
+  article2: { 
+    title: 'بهترین روش‌های طراحی رابط کاربری', 
+    tag: 'مقاله', 
+    excerpt: 'اصول طراحی UI مدرن با تمرکز بر تجربه کاربری', 
+    category: 'articles', 
+    image: 'https://picsum.photos/seed/ui-design/400/200', 
+    link: '/article/2' 
+  },
+  slider: { 
+    title: 'اسلایدر پست‌های وبلاگ', 
+    tag: 'قطعه کد', 
+    excerpt: 'اسلایدر زیبا و واکنش‌گرا با پشتیبانی از لمس', 
+    category: 'snippets', 
+    image: 'https://picsum.photos/seed/slider-code/400/200', 
+    link: '/snippet/slider' 
+  },
+  toc: { 
+    title: 'جدول محتوا خودکار', 
+    tag: 'قطعه کد', 
+    excerpt: 'ساخت خودکار جدول محتوا از تیترهای پست', 
+    category: 'snippets', 
+    image: 'https://picsum.photos/seed/toc-auto/400/200', 
+    link: '/snippet/toc' 
+  },
+  theme: { 
+    title: 'قالب مدرن وبلاگ', 
+    tag: 'قالب', 
+    excerpt: 'قالب واکنش‌گرا و بهینه‌شده برای SEO', 
+    category: 'templates', 
+    image: 'https://picsum.photos/seed/modern-theme/400/200', 
+    link: '/template/modern' 
+  },
+  contact: { 
+    title: 'فرم تماس پیشرفته', 
+    tag: 'ابزار', 
+    excerpt: 'فرم تماس با اعتبارسنجی لحظه‌ای و ضد اسپم', 
+    category: 'tools', 
+    image: 'https://picsum.photos/seed/contact-form/400/200', 
+    link: '/tool/contact' 
+  },  dark: { 
+    title: 'حالت تاریک هوشمند', 
+    tag: 'ابزار', 
+    excerpt: 'تغییر تم سایت با تشخیص خودکار تنظیمات سیستم', 
+    category: 'tools', 
+    image: 'https://picsum.photos/seed/dark-mode/400/200', 
+    link: '/tool/dark' 
+  },
+  shop1: { 
+    title: 'قالب حرفه‌ای بلاگفا - نسخه VIP', 
+    tag: 'قالب پولی', 
+    excerpt: 'قالب کاملاً واکنش‌گرا با طراحی مدرن و امکانات پیشرفته', 
+    category: 'shop', 
+    image: 'https://picsum.photos/seed/vip-template/400/200', 
+    link: '/shop/template-vip', 
+    price: '۴۹,۰۰۰' 
+  },
+  shop2: { 
+    title: 'قالب فروشگاهی بلاگفا', 
+    tag: 'قالب پولی', 
+    excerpt: 'مناسب برای فروشگاه‌های آنلاین با سیستم سبد خرید', 
+    category: 'shop', 
+    image: 'https://picsum.photos/seed/store-shop/400/200', 
+    link: '/shop/template-store', 
+    price: '۷۹,۰۰۰' 
+  },
+  shop3: { 
+    title: 'قالب خبری پیشرفته', 
+    tag: 'قالب پولی', 
+    excerpt: 'طراحی شده برای سایت‌های خبری با دسته‌بندی‌های متعدد', 
+    category: 'shop', 
+    image: 'https://picsum.photos/seed/news-portal/400/200', 
+    link: '/shop/template-news', 
+    price: '۵۹,۰۰۰' 
+  }
 };
 
 // ========== آیکون‌ها ==========
@@ -26,8 +96,7 @@ const toastIcons = {
   moon: `<svg class="px px-16" viewBox="0 0 16 16"><g fill="#a78bfa"><rect x="9" y="2" width="2" height="1"/><rect x="10" y="3" width="2" height="1"/><rect x="11" y="4" width="1" height="1"/><rect x="7" y="3" width="2" height="1"/><rect x="6" y="4" width="2" height="1"/><rect x="5" y="5" width="2" height="1"/><rect x="4" y="6" width="2" height="2"/><rect x="5" y="8" width="2" height="1"/><rect x="6" y="9" width="2" height="1"/><rect x="7" y="10" width="2" height="1"/><rect x="8" y="11" width="2" height="1"/><rect x="9" y="12" width="1" height="1"/></g></svg>`
 };
 
-// ========== کارت‌ها ==========
-function createCard(id, data) {
+// ========== کارت‌ها ==========function createCard(id, data) {
   const card = document.createElement('div');
   card.className = 'card';
   card.dataset.id = id;
@@ -47,7 +116,8 @@ function createCard(id, data) {
   footer.className = 'card-footer';
   
   if (data.price) {
-    footer.innerHTML = `      <span class="card-tag">${data.tag}</span>
+    footer.innerHTML = `
+      <span class="card-tag">${data.tag}</span>
       <span class="card-price">${moneyIcon} ${data.price} تومان</span>
     `;
   } else {
@@ -75,8 +145,7 @@ function renderCategoryItems() {
     container.innerHTML = '';
     Object.keys(itemsData).forEach(id => {
       if (itemsData[id].category === category) {
-        container.appendChild(createCard(id, itemsData[id]));
-      }
+        container.appendChild(createCard(id, itemsData[id]));      }
     });
   });
 }
@@ -96,7 +165,8 @@ try { savedTheme = localStorage.getItem('pixlog_theme'); } catch(e) { savedTheme
 applyTheme(savedTheme || 'dark');
 
 themeToggle.addEventListener('click', () => {
-  const current = document.documentElement.getAttribute('data-theme');  const next = current === 'light' ? 'dark' : 'light';
+  const current = document.documentElement.getAttribute('data-theme');
+  const next = current === 'light' ? 'dark' : 'light';
   applyTheme(next);
   showToast((next === 'light' ? toastIcons.sun : toastIcons.moon) + (next === 'light' ? ' حالت روشن' : ' حالت تاریک'));
 });
@@ -125,7 +195,6 @@ document.querySelectorAll('.tab[data-filter]').forEach(tab => {
 
 // ========== ناوبری صفحات ==========
 const pages = document.querySelectorAll('.page');
-
 function switchPage(pageId) {
   pages.forEach(p => p.classList.remove('active'));
   const target = document.getElementById(`page-${pageId}`);
