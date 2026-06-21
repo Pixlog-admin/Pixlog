@@ -6,7 +6,7 @@
 <title>Pixlog - ابزار و کد آماده وبلاگ</title>
 <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;700;900&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="index.css">
+<link rel="stylesheet" href="index.css?v=2">
 </head>
 <body>
 
@@ -24,7 +24,6 @@
   </div>
 </header>
 
-<!-- ========== صفحه خانه ========== -->
 <div class="page active" id="page-home">
   <main class="main-content">
     <div class="hero-gif">
@@ -47,8 +46,8 @@
         </div>
         <a href="/articles" class="view-all">
           مشاهده همه
-          <svg class="px px-16" viewBox="0 0 16 16"><g fill="currentColor"><rect x="3" y="7" width="8" height="2"/><rect x="9" y="5" width="2" height="2"/><rect x="9" y="9" width="2" height="2"/><rect x="11" y="6" width="2" height="4"/></g></svg>        </a>
-      </div>
+          <svg class="px px-16" viewBox="0 0 16 16"><g fill="currentColor"><rect x="3" y="7" width="8" height="2"/><rect x="9" y="5" width="2" height="2"/><rect x="9" y="9" width="2" height="2"/><rect x="11" y="6" width="2" height="4"/></g></svg>
+        </a>      </div>
       <div class="cards-grid" id="articlesList"></div>
     </section>
 
@@ -96,8 +95,8 @@
 
     <section class="section hidden" id="sec-shop">
       <div class="section-header">
-        <div class="section-title">          <svg class="px px-24" viewBox="0 0 16 16"><g fill="#FDE68A"><rect x="5" y="1" width="6" height="1"/><rect x="4" y="2" width="1" height="1"/><rect x="11" y="2" width="1" height="1"/><rect x="3" y="3" width="10" height="1"/><rect x="2" y="4" width="12" height="1"/><rect x="2" y="5" width="1" height="8"/><rect x="13" y="5" width="1" height="8"/><rect x="3" y="13" width="10" height="1"/><rect x="4" y="14" width="8" height="1"/></g><g fill="#FBBF24"><rect x="3" y="5" width="10" height="1"/><rect x="3" y="6" width="1" height="6"/><rect x="12" y="6" width="1" height="6"/><rect x="4" y="12" width="8" height="1"/></g><g fill="#D97706"><rect x="6" y="7" width="4" height="3"/><rect x="7" y="10" width="2" height="2"/></g></svg>
-          فروشگاه قالب‌های پولی
+        <div class="section-title">
+          <svg class="px px-24" viewBox="0 0 16 16"><g fill="#FDE68A"><rect x="5" y="1" width="6" height="1"/><rect x="4" y="2" width="1" height="1"/><rect x="11" y="2" width="1" height="1"/><rect x="3" y="3" width="10" height="1"/><rect x="2" y="4" width="12" height="1"/><rect x="2" y="5" width="1" height="8"/><rect x="13" y="5" width="1" height="8"/><rect x="3" y="13" width="10" height="1"/><rect x="4" y="14" width="8" height="1"/></g><g fill="#FBBF24"><rect x="3" y="5" width="10" height="1"/><rect x="3" y="6" width="1" height="6"/><rect x="12" y="6" width="1" height="6"/><rect x="4" y="12" width="8" height="1"/></g><g fill="#D97706"><rect x="6" y="7" width="4" height="3"/><rect x="7" y="10" width="2" height="2"/></g></svg>          فروشگاه قالب‌های پولی
         </div>
         <a href="/shop" class="view-all">
           مشاهده همه
@@ -109,7 +108,6 @@
   </main>
 </div>
 
-<!-- ========== صفحه درباره ========== -->
 <div class="page" id="page-about">
   <div class="page-container">
     <div class="page-header">
@@ -145,10 +143,9 @@
         چرا پیکسلی؟
       </h3>
       <p>طراحی پیکسلی (Pixel Art) یادآور دوران طلایی بازی‌های ویدیویی است. ما با ترکیب این نوستالژی با فناوری‌های مدرن، تجربه‌ای منحصر به فرد برای وبلاگ‌نویسان ایجاد کرده‌ایم. هر آیکون، هر دکمه و هر المان بصری با دقت و به صورت پیکسلی طراحی شده است.</p>
-    </div>  </div>
+    </div>
+  </div>
 </div>
-
-<!-- ========== فوتر ========== -->
 <footer class="footer">
   <div class="footer-inner">
     <div class="footer-quick">
@@ -158,43 +155,32 @@
           دسترسی سریع
         </h4>
         <ul class="footer-links">
-          <li>
-            <a href="#" onclick="switchPage('home');return false;">
-              <svg class="px px-16" viewBox="0 0 16 16" fill="currentColor"><rect x="7" y="2" width="2" height="1"/><rect x="6" y="3" width="4" height="1"/><rect x="5" y="4" width="6" height="1"/><rect x="4" y="5" width="8" height="1"/><rect x="3" y="6" width="10" height="1"/><rect x="4" y="7" width="2" height="5"/><rect x="10" y="7" width="2" height="5"/><rect x="6" y="9" width="4" height="3"/><rect x="3" y="12" width="10" height="1"/></svg>
-              خانه
-            </a>
-          </li>
-          <li>
-            <a href="#" onclick="switchPage('about');return false;">
-              <svg class="px px-16" viewBox="0 0 16 16" fill="currentColor"><rect x="6" y="2" width="4" height="4"/><rect x="5" y="3" width="1" height="2"/><rect x="10" y="3" width="1" height="2"/><rect x="5" y="6" width="6" height="1"/><rect x="6" y="7" width="4" height="1"/><rect x="6" y="9" width="4" height="1"/><rect x="5" y="10" width="6" height="2"/><rect x="4" y="12" width="8" height="1"/><rect x="6" y="13" width="4" height="1"/></svg>
-              درباره
-            </a>
-          </li>
-          <li>
-            <a href="https://ai.pixlog.ir" target="_blank" rel="noopener">
-              <svg class="px px-16" viewBox="0 0 16 16" fill="currentColor"><rect x="7" y="1" width="2" height="1"/><rect x="7" y="2" width="2" height="1"/><rect x="3" y="4" width="10" height="1"/><rect x="2" y="5" width="1" height="7"/><rect x="13" y="5" width="1" height="7"/><rect x="3" y="12" width="10" height="1"/><rect x="4" y="13" width="2" height="2"/><rect x="10" y="13" width="2" height="2"/><rect x="5" y="7" width="2" height="2"/><rect x="9" y="7" width="2" height="2"/><rect x="7" y="9" width="2" height="2"/></svg>
-              هوش مصنوعی
-            </a>
-          </li>
-          <li>
-            <a href="https://piximg.ir" target="_blank" rel="noopener">
-              <svg class="px px-16" viewBox="0 0 16 16" fill="currentColor"><rect x="2" y="2" width="12" height="1"/><rect x="2" y="3" width="1" height="10"/><rect x="13" y="3" width="1" height="10"/><rect x="2" y="13" width="12" height="1"/><rect x="4" y="5" width="2" height="2"/><rect x="10" y="5" width="2" height="2"/><rect x="7" y="8" width="2" height="2"/><rect x="4" y="11" width="8" height="1"/></svg>
-              Piximg
-            </a>
-          </li>
-          <li>
-            <a href="https://pixmoji.pixlog.ir" target="_blank" rel="noopener">
-              <svg class="px px-16" viewBox="0 0 16 16" fill="currentColor"><rect x="3" y="2" width="10" height="1"/><rect x="2" y="3" width="1" height="10"/><rect x="13" y="3" width="1" height="10"/><rect x="3" y="13" width="10" height="1"/><rect x="5" y="5" width="2" height="2"/><rect x="9" y="5" width="2" height="2"/><rect x="5" y="9" width="1" height="1"/><rect x="10" y="9" width="1" height="1"/><rect x="6" y="10" width="4" height="1"/></svg>
-              Pixmoji
-            </a>
-          </li>
-          <li>
-            <a href="https://contact.pixlog.ir" target="_blank" rel="noopener">
-              <svg class="px px-16" viewBox="0 0 16 16" fill="currentColor"><rect x="2" y="4" width="12" height="1"/><rect x="2" y="5" width="1" height="7"/><rect x="13" y="5" width="1" height="7"/><rect x="2" y="12" width="12" height="1"/><rect x="4" y="6" width="2" height="1"/><rect x="10" y="6" width="2" height="1"/><rect x="6" y="7" width="4" height="1"/><rect x="7" y="8" width="2" height="1"/></svg>
-              ارتباط
-            </a>
-          </li>
-        </ul>      </div>
+          <li><a href="#" onclick="switchPage('home');return false;">
+            <svg class="px px-16" viewBox="0 0 16 16" fill="currentColor"><rect x="7" y="2" width="2" height="1"/><rect x="6" y="3" width="4" height="1"/><rect x="5" y="4" width="6" height="1"/><rect x="4" y="5" width="8" height="1"/><rect x="3" y="6" width="10" height="1"/><rect x="4" y="7" width="2" height="5"/><rect x="10" y="7" width="2" height="5"/><rect x="6" y="9" width="4" height="3"/><rect x="3" y="12" width="10" height="1"/></svg>
+            خانه
+          </a></li>
+          <li><a href="#" onclick="switchPage('about');return false;">
+            <svg class="px px-16" viewBox="0 0 16 16" fill="currentColor"><rect x="6" y="2" width="4" height="4"/><rect x="5" y="3" width="1" height="2"/><rect x="10" y="3" width="1" height="2"/><rect x="5" y="6" width="6" height="1"/><rect x="6" y="7" width="4" height="1"/><rect x="6" y="9" width="4" height="1"/><rect x="5" y="10" width="6" height="2"/><rect x="4" y="12" width="8" height="1"/><rect x="6" y="13" width="4" height="1"/></svg>
+            درباره
+          </a></li>
+          <li><a href="https://ai.pixlog.ir" target="_blank" rel="noopener">
+            <svg class="px px-16" viewBox="0 0 16 16" fill="currentColor"><rect x="7" y="1" width="2" height="1"/><rect x="7" y="2" width="2" height="1"/><rect x="3" y="4" width="10" height="1"/><rect x="2" y="5" width="1" height="7"/><rect x="13" y="5" width="1" height="7"/><rect x="3" y="12" width="10" height="1"/><rect x="4" y="13" width="2" height="2"/><rect x="10" y="13" width="2" height="2"/><rect x="5" y="7" width="2" height="2"/><rect x="9" y="7" width="2" height="2"/><rect x="7" y="9" width="2" height="2"/></svg>
+            هوش مصنوعی
+          </a></li>
+          <li><a href="https://piximg.ir" target="_blank" rel="noopener">
+            <svg class="px px-16" viewBox="0 0 16 16" fill="currentColor"><rect x="2" y="2" width="12" height="1"/><rect x="2" y="3" width="1" height="10"/><rect x="13" y="3" width="1" height="10"/><rect x="2" y="13" width="12" height="1"/><rect x="4" y="5" width="2" height="2"/><rect x="10" y="5" width="2" height="2"/><rect x="7" y="8" width="2" height="2"/><rect x="4" y="11" width="8" height="1"/></svg>
+            Piximg
+          </a></li>
+          <li><a href="https://pixmoji.pixlog.ir" target="_blank" rel="noopener">
+            <svg class="px px-16" viewBox="0 0 16 16" fill="currentColor"><rect x="3" y="2" width="10" height="1"/><rect x="2" y="3" width="1" height="10"/><rect x="13" y="3" width="1" height="10"/><rect x="3" y="13" width="10" height="1"/><rect x="5" y="5" width="2" height="2"/><rect x="9" y="5" width="2" height="2"/><rect x="5" y="9" width="1" height="1"/><rect x="10" y="9" width="1" height="1"/><rect x="6" y="10" width="4" height="1"/></svg>
+            Pixmoji
+          </a></li>
+          <li><a href="https://contact.pixlog.ir" target="_blank" rel="noopener">
+            <svg class="px px-16" viewBox="0 0 16 16" fill="currentColor"><rect x="2" y="4" width="12" height="1"/><rect x="2" y="5" width="1" height="7"/><rect x="13" y="5" width="1" height="7"/><rect x="2" y="12" width="12" height="1"/><rect x="4" y="6" width="2" height="1"/><rect x="10" y="6" width="2" height="1"/><rect x="6" y="7" width="4" height="1"/><rect x="7" y="8" width="2" height="1"/></svg>
+            ارتباط
+          </a></li>
+        </ul>
+      </div>
     </div>
 
     <div class="footer-bottom">
@@ -208,13 +194,12 @@
           <svg class="px px-16" viewBox="0 0 16 16"><g fill="#ef4444"><rect x="5" y="3" width="2" height="1"/><rect x="9" y="3" width="2" height="1"/><rect x="3" y="4" width="2" height="1"/><rect x="5" y="4" width="2" height="1"/><rect x="7" y="4" width="2" height="1"/><rect x="9" y="4" width="2" height="1"/><rect x="11" y="4" width="2" height="1"/><rect x="2" y="5" width="1" height="2"/><rect x="13" y="5" width="1" height="2"/><rect x="2" y="7" width="1" height="2"/><rect x="13" y="7" width="1" height="2"/><rect x="3" y="9" width="2" height="1"/><rect x="11" y="9" width="2" height="1"/><rect x="5" y="10" width="2" height="1"/><rect x="9" y="10" width="2" height="1"/><rect x="7" y="11" width="2" height="1"/></g></svg>
         </span>
         IN PIXLOG
-      </div>
-    </div>
+      </div>    </div>
   </div>
 </footer>
 
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
 
-<script src="index.js"></script>
+<script src="index.js?v=2"></script>
 </body>
 </html>
