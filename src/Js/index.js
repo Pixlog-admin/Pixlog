@@ -5,7 +5,7 @@ const itemsData = {
     tag: 'مقاله', 
     excerpt: 'آموزش کامل بهینه‌سازی وبلاگ برای موتورهای جستجو', 
     category: 'articles', 
-    image: 'https://picsum.photos/400/200?random=1', 
+    image: 'https://placehold.co/400x200/7c3aed/ffffff?text=SEO+Guide&font=roboto', 
     link: '/article/1' 
   },
   article2: { 
@@ -13,7 +13,7 @@ const itemsData = {
     tag: 'مقاله', 
     excerpt: 'اصول طراحی UI مدرن با تمرکز بر تجربه کاربری', 
     category: 'articles', 
-    image: 'https://picsum.photos/400/200?random=2', 
+    image: 'https://placehold.co/400x200/ec4899/ffffff?text=UI+Design&font=roboto', 
     link: '/article/2' 
   },
   slider: { 
@@ -21,7 +21,7 @@ const itemsData = {
     tag: 'قطعه کد', 
     excerpt: 'اسلایدر زیبا و واکنش‌گرا با پشتیبانی از لمس', 
     category: 'snippets', 
-    image: 'https://picsum.photos/400/200?random=3', 
+    image: 'https://placehold.co/400x200/3b82f6/ffffff?text=Slider+Code&font=roboto', 
     link: '/snippet/slider' 
   },
   toc: { 
@@ -29,7 +29,7 @@ const itemsData = {
     tag: 'قطعه کد', 
     excerpt: 'ساخت خودکار جدول محتوا از تیترهای پست', 
     category: 'snippets', 
-    image: 'https://picsum.photos/400/200?random=4', 
+    image: 'https://placehold.co/400x200/10b981/ffffff?text=Auto+TOC&font=roboto', 
     link: '/snippet/toc' 
   },
   theme: { 
@@ -37,7 +37,7 @@ const itemsData = {
     tag: 'قالب', 
     excerpt: 'قالب واکنش‌گرا و بهینه‌شده برای SEO', 
     category: 'templates', 
-    image: 'https://picsum.photos/400/200?random=5', 
+    image: 'https://placehold.co/400x200/f59e0b/ffffff?text=Modern+Theme&font=roboto', 
     link: '/template/modern' 
   },
   contact: { 
@@ -45,14 +45,14 @@ const itemsData = {
     tag: 'ابزار', 
     excerpt: 'فرم تماس با اعتبارسنجی لحظه‌ای و ضد اسپم', 
     category: 'tools', 
-    image: 'https://picsum.photos/400/200?random=6', 
+    image: 'https://placehold.co/400x200/ef4444/ffffff?text=Contact+Form&font=roboto', 
     link: '/tool/contact' 
   },  dark: { 
     title: 'حالت تاریک هوشمند', 
     tag: 'ابزار', 
     excerpt: 'تغییر تم سایت با تشخیص خودکار تنظیمات سیستم', 
     category: 'tools', 
-    image: 'https://picsum.photos/400/200?random=7', 
+    image: 'https://placehold.co/400x200/1e293b/fbbf24?text=Dark+Mode&font=roboto', 
     link: '/tool/dark' 
   },
   shop1: { 
@@ -60,7 +60,7 @@ const itemsData = {
     tag: 'قالب پولی', 
     excerpt: 'قالب کاملاً واکنش‌گرا با طراحی مدرن و امکانات پیشرفته', 
     category: 'shop', 
-    image: 'https://picsum.photos/400/200?random=8', 
+    image: 'https://placehold.co/400x200/fbbf24/0a0e1a?text=VIP+Template&font=roboto', 
     link: '/shop/template-vip', 
     price: '۴۹,۰۰۰' 
   },
@@ -69,7 +69,7 @@ const itemsData = {
     tag: 'قالب پولی', 
     excerpt: 'مناسب برای فروشگاه‌های آنلاین با سیستم سبد خرید', 
     category: 'shop', 
-    image: 'https://picsum.photos/400/200?random=9', 
+    image: 'https://placehold.co/400x200/06b6d4/ffffff?text=Shop+Template&font=roboto', 
     link: '/shop/template-store', 
     price: '۷۹,۰۰۰' 
   },
@@ -78,7 +78,7 @@ const itemsData = {
     tag: 'قالب پولی', 
     excerpt: 'طراحی شده برای سایت‌های خبری با دسته‌بندی‌های متعدد', 
     category: 'shop', 
-    image: 'https://picsum.photos/400/200?random=10', 
+    image: 'https://placehold.co/400x200/8b5cf6/ffffff?text=News+Template&font=roboto', 
     link: '/shop/template-news', 
     price: '۵۹,۰۰۰' 
   }
